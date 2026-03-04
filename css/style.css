@@ -1,13 +1,15 @@
 body{
     overflow: hidden;
     margin: 0;
+    
 }
 
 #container{
+    
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 70px 1fr 1fr 30px;
+    grid-template-rows: 70px 1fr 1fr 50px;
     grid-template-areas: 
     'hd hd hd hd'
     'mn mn sc1 sc2'
@@ -19,7 +21,7 @@ body{
 
 header{
     grid-area: hd;
-    background-color: black;
+    background-color: purple;
 }
 
 nav{
@@ -27,7 +29,7 @@ nav{
 }
 .menu{
     height: 100vh;
-    width: 80vw;
+    width: 30vw;
     background: hotpink;
     position: fixed;
     top: 0;
@@ -41,8 +43,8 @@ nav{
     display: inline;
 }
 .menu-button i.material-icons{
-    font-size: 2.5rem;
-    color: wheat;
+    width: 50px;
+    height: 50px;
 }
 .show{
     left: 0;
@@ -53,7 +55,7 @@ nav{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.162);
     display: none;
     z-index: 5;
 }
@@ -92,4 +94,17 @@ footer{
     grid-area: ft;
     background-color: yellow;
     margin-bottom: -15px;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    body{
+        background-color: green;
+        color: brown;
+    }
+
 }
