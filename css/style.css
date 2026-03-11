@@ -1,5 +1,4 @@
 body{
-    overflow: hidden;
     margin: 0;
     
 }
@@ -9,7 +8,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 70px 1fr 1fr 50px;
+    grid-template-rows: 100px 1fr 1fr 50px;
     grid-template-areas: 
     'hd hd hd hd'
     'mn mn sc1 sc2'
@@ -22,6 +21,8 @@ body{
 header{
     grid-area: hd;
     background-color: purple;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav{
@@ -73,6 +74,9 @@ nav{
 main{
     grid-area: mn;
     background-color: coral;
+    background-image: url(../img/26324917-en-person-staende-pa-de-topp-av-en-fjall-utsikt-en-hisnande-landskap-solig-sommar-morgon-generativ-ai-gratis-fotona.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #section{
