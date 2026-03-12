@@ -4,15 +4,14 @@ body{
 }
 
 #container{
-    
     display: grid;
-    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr 50px;
+    grid-template-rows: 100px calc((100vh - 150px)/2) calc((100vh - 150px)/2) 700px 120px;
     grid-template-areas: 
     'hd hd hd hd'
     'mn mn sc1 sc2'
     'mn mn as as'
+    'hi1 hi1 hi2 hi2'
     'ft ft ft ft'
     ;
     gap: 15px;
@@ -20,9 +19,16 @@ body{
 
 header{
     grid-area: hd;
-    background-color: purple;
+    border-color: black;
     display: flex;
     justify-content: space-between;
+    
+}
+
+#logo{
+    width: 300px;
+    height: 110px;
+
 }
 
 nav{
@@ -74,7 +80,7 @@ nav{
 main{
     grid-area: mn;
     background-color: coral;
-    background-image: url(../img/26324917-en-person-staende-pa-de-topp-av-en-fjall-utsikt-en-hisnande-landskap-solig-sommar-morgon-generativ-ai-gratis-fotona.png);
+    background-image: url(../img/brautrustningbättreäventyr.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -82,22 +88,69 @@ main{
 #section{
     grid-area: sc1;
     background-color: blue;
+    background-image: url(../img/TERRÄNGSKO1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #section2{
     grid-area: sc2;
     background-color: violet;
+    background-image: url(../img/Screenshot\ 2026-03-12\ 155047.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-aside{
+#aside{
     grid-area: as;
     background-color: red;
+    background-image: url(../img/övrigajkläder1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#hitta1{
+    grid-area: hi1;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    justify-items: center; 
+    gap: 10px;
+    font-size: 20px;
+    font-family:sans-serif;
+    margin-top: 50px;
+}
+#hitta1 img{
+    width: 90%; 
+    height: 490px;
+    display: block;
+}
+
+#hitta2{
+    grid-area: hi2;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    justify-items: center; 
+    gap: 10px;
+    font-size: 20px;
+    font-family:sans-serif;
+    margin-top: 50px;
+}
+#hitta2 img{
+    width: 90%; 
+    height: 490px;
+    display: block;
 }
 
 footer{
     grid-area: ft;
-    background-color: yellow;
+    background-color: rgb(19, 109, 34);
     margin-bottom: -15px;
+    display: flex;
+    padding-left: 20px;
+    align-items: flex-start;
+    
 }
 
 
