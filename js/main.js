@@ -1,4 +1,5 @@
 /* alert("Hallå") */
+alert("Hallå")
 
 let layer = document.querySelector(".fade-layer")
 layer.addEventListener("click", showMenu)
