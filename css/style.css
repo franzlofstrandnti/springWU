@@ -44,6 +44,7 @@ nav{
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.829);
     z-index: 10;
+    
 }
 .menu-button{
     cursor: pointer;
@@ -148,8 +149,8 @@ footer{
     align-items: flex-start;
     
 }
-footer, a{
-    color: white;
+footer a{
+    color: black;
 }
 
 
@@ -163,7 +164,7 @@ footer, a{
     #container{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 100px 290px 350px 360px 250px 650px 650px 100px;
+    grid-template-rows: 100px 290px 350px 360px 250px 500px 600px 100px;
     grid-template-areas: 
     'hd'
     'mn'
@@ -174,86 +175,22 @@ footer, a{
     'hi2'
     'ft'
     ;
+    
     gap: 15px;
-}
+    }
+    .menu{
+        width: 90vw;
+        color: black;
+    }
 
-header{
-    grid-area: hd;
-    border-color: black;
-    display: flex;
-    justify-content: space-between;
+
+    #hitta1 img{
+        height: auto;
+        width: 100vw;
+    }
+    #hitta2 img{
+        height: auto;
+        width: 100vw;
+    }
     
-}
-
-#logo{
-    width: 300px;
-    height: 110px;
-
-}
-
-nav{
-    
-}
-.menu{
-    width: 90vw;
-    background: blue;
-
-    box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.237);
-
-
-#section{
-    background-size: 140vw;
-}
-
-#section2{
-    background-size: 100vw;
-    background-repeat: no-repeat;
-}
-
-#aside{
-    background-size: 100vw;
-}
-
-#hitta1{
-    grid-area: hi1;
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    justify-items: center; 
-    gap: 10px;
-    font-size: 20px;
-    font-family:sans-serif;
-    margin-top: 50px;
-}
-#hitta1 img{
-    width: 100vw; 
-    height: 490px;
-    display: block;
-}
-
-#hitta2{
-    grid-area: hi2;
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    justify-items: center; 
-    gap: 10px;
-    font-size: 20px;
-    font-family:sans-serif;
-    margin-top: 50px;
-}
-#hitta2 img{
-    width: 90%; 
-    height: 490px;
-    display: block;
-}
-
-footer{
-    grid-area: ft;
-    margin-bottom: -15px;
-    display: flex;
-    padding-left: 20px;
-    align-items: flex-start;
-    color: black;
-}
 }
