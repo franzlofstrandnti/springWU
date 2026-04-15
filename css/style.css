@@ -7,7 +7,7 @@ body{
 #container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 120px calc((100vh - 150px)/2) calc((100vh - 150px)/2) 700px 110px;
+    grid-template-rows: 120px calc((100vh - 160px)/2) calc((100vh - 150px)/2) 700px 110px;
     grid-template-areas: 
     'hd hd hd hd'
     'mn mn sc1 sc2'
@@ -18,20 +18,6 @@ body{
     gap: 15px;
 }
 
-#containershoppen{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px 100px 100px 100px 110px;
-    grid-template-areas: 
-    'hd hd'
-    'mn mn' 
-    'as as'
-    'hi1 hi1'
-    'hi2 hi2'
-    'ft ft'
-    ;
-    gap: 15px;
-}
 #containerryggsäckskollen{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,6 +39,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(19, 109, 34);
+    border-radius: 0px 0px 10px 10px;
 }
 
 #logo{
@@ -61,12 +48,10 @@ header{
 
 }
 
-nav{
-    
-}
+
 .menu{
     height: 100vh;
-    width: 30vw;
+    width: 20vw;
     background: white;
     position: fixed;
     top: 0;
@@ -121,6 +106,8 @@ nav{
     background-image: url(../img/brautrustningbättreäventyr.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-left: 5px;
 }
 
 #section{
@@ -128,6 +115,7 @@ nav{
     background-image: url(../img/TERRÄNGSKO1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 #section2{
@@ -135,6 +123,8 @@ nav{
     background-image: url(../img/Screenshot\ 2026-03-12\ 155047.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-right: 5px;
 }
 
 #aside{
@@ -142,6 +132,8 @@ nav{
     background-image: url(../img/övrigajkläder1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-right: 5px;
 }
 
 #hitta1{
@@ -159,6 +151,7 @@ nav{
     width: 90%; 
     height: 450px;
     display: block;
+    border-radius: 20px;
 }
 
 #hitta2{
@@ -176,6 +169,7 @@ nav{
     width: 90%; 
     height: 450px;
     display: block;
+    border-radius: 20px;
 }
 
 footer{
@@ -248,9 +242,7 @@ footer a{
         margin-bottom: -20px;
     }
 
-    #containerskokollen{
-        
-    }
+   
     #mainsokollen{
         width: 100vw;
         font-size: 2px;
@@ -317,4 +309,60 @@ footer a{
 }
 #section3sko p{
     width: 1000px;
+}
+
+
+
+
+#containershoppen{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 100px auto 100px 110px;
+    grid-template-areas: 
+    'hd'
+    'mn' 
+    'seshop1'
+    'seshop2'
+    'asshop1'
+    'ft'
+    ;
+    gap: 15px;
+}
+#mainshoppen{
+    display: flex;
+    justify-content: center;
+    grid-area: mn;
+    font-size: 30px;
+}
+#seshop1{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#seshop1 h2{
+    font-size: 40px;
+}
+#seshop1 h3{
+    font-size: 25px;
+}
+#seshop1 img{
+    width: 250px;
+    float: right;
+    margin-left: 50px;
+    margin-top: -20px;
+    border-radius: 50px;
+}
+#seshop1 p{
+    width: 1200px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#seshop2{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#seshop3{
+    
 }
