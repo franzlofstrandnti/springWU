@@ -1,12 +1,13 @@
 body{
     margin: 0;
+
     
 }
 
 #container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px calc((100vh - 150px)/2) calc((100vh - 150px)/2) 700px 120px;
+    grid-template-rows: 120px calc((100vh - 150px)/2) calc((100vh - 150px)/2) 700px 110px;
     grid-template-areas: 
     'hd hd hd hd'
     'mn mn sc1 sc2'
@@ -17,17 +18,46 @@ body{
     gap: 15px;
 }
 
+#containershoppen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 100px 100px 100px 110px;
+    grid-template-areas: 
+    'hd hd'
+    'mn mn' 
+    'as as'
+    'hi1 hi1'
+    'hi2 hi2'
+    'ft ft'
+    ;
+    gap: 15px;
+}
+#containerryggsäckskollen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 100px 100px 100px 110px;
+    grid-template-areas: 
+    'hd hd'
+    'mn mn' 
+    'as as'
+    'hi1 hi1'
+    'hi2 hi2'
+    'ft ft'
+    ;
+    gap: 15px;
+}
+
 header{
     grid-area: hd;
     border-color: black;
     display: flex;
     justify-content: space-between;
-    
+    background-color: rgb(19, 109, 34);
 }
 
 #logo{
     width: 300px;
-    height: 110px;
+    height: 120px;
 
 }
 
@@ -44,8 +74,16 @@ nav{
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.829);
     z-index: 10;
+    font-size: 150%;
     
 }
+.menu li{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
 .menu-button{
     cursor: pointer;
     display: inline;
@@ -81,21 +119,21 @@ nav{
 #mainindex{
     grid-area: mn;
     background-image: url(../img/brautrustningbättreäventyr.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #section{
     grid-area: sc1;
     background-image: url(../img/TERRÄNGSKO1.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #section2{
     grid-area: sc2;
     background-image: url(../img/Screenshot\ 2026-03-12\ 155047.png);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -164,7 +202,7 @@ footer a{
     #container{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 100px 290px 350px 360px 250px 500px 600px 100px;
+    grid-template-rows: 120px 340px 340px 340px 250px 500px 600px 110px;
     grid-template-areas: 
     'hd'
     'mn'
@@ -183,7 +221,21 @@ footer a{
         color: black;
     }
 
+    #mainindex{
+        background-size: 100% 100%;
+    }
 
+    #section{
+        background-size: 100% 100%;
+    }
+
+    #section2{
+        background-size: 100% 100%;
+    }
+
+    #aside{
+        background-size: 100% 100%;
+    }
     #hitta1 img{
         height: auto;
         width: 100vw;
@@ -192,5 +244,77 @@ footer a{
         height: auto;
         width: 100vw;
     }
+    footer{
+        margin-bottom: -20px;
+    }
+
+    #containerskokollen{
+        
+    }
+    #mainsokollen{
+        width: 100vw;
+        font-size: 2px;
+    }
     
+}
+#containerskokollen{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 200px 200px 600px 200px 110px;
+    grid-template-areas: 
+    'hd'
+    'mnsko' 
+    'sc1sko'
+    'sc2sko'
+    'sc3sko'
+    'ft'
+    ;
+    gap: 15px;
+}
+
+#mainskokollen{
+    grid-area: mnsko;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+#mainskokollen p{
+    width: 1000px;
+}
+#section1sko{
+    grid-area: sc1sko;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+#section1sko p{
+    width: 1000px;
+}
+#section2sko{
+    grid-area: sc2sko;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#section3sko{
+    grid-area: sc3sko;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+#section3sko p{
+    width: 1000px;
 }
